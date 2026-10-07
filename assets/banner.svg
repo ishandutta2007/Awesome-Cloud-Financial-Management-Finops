@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.3"/>
+    </pattern>
+
+    <!-- Soft Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.05); }
+      100% { opacity: 0.3; transform: scale(1); }
+    }
+    @keyframes floatChart {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes waveLine {
+      0% { stroke-dashoffset: 1000; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .bg-circle-1 { animation: pulseGlow 6s ease-in-out infinite; transform-origin: 200px 100px; }
+    .bg-circle-2 { animation: pulseGlow 8s ease-in-out infinite reverse; transform-origin: 1000px 300px; }
+    .dynamic-chart { animation: floatChart 4s ease-in-out infinite; }
+    .title-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #ffffff; }
+    .subtitle-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; fill: #94a3b8; }
+    .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #38bdf8; }
+  </style>
+
+  <!-- Base Layer: Dark Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Background Grid -->
+  <rect width="1200" height="400" fill="url(#grid)"/>
+
+  <!-- Dynamic Ambient Glowing Orbs (Background) -->
+  <circle class="bg-circle-1" cx="200" cy="100" r="180" fill="url(#purpleGlow)" filter="url(#glow)"/>
+  <circle class="bg-circle-2" cx="1000" cy="300" r="220" fill="url(#cyanGlow)" filter="url(#glow)"/>
+
+  <!-- Dynamic Visual Elements (Kept in Background / Side Layer) -->
+  <g class="dynamic-chart" opacity="0.25">
+    <!-- Financial Growth Wave Line -->
+    <path d="M 50 320 Q 250 280, 450 330 T 850 250 T 1150 180" fill="none" stroke="#10b981" stroke-width="4" stroke-dasharray="1000" stroke-dashoffset="0" filter="url(#glow)"/>
+    <path d="M 50 320 Q 250 280, 450 330 T 850 250 T 1150 180 L 1150 380 L 50 380 Z" fill="url(#emeraldGlow)" opacity="0.15"/>
+    
+    <!-- Decorative FinOps Bar Chart Elements -->
+    <rect x="920" y="220" width="18" height="100" rx="4" fill="#38bdf8" opacity="0.6"/>
+    <rect x="950" y="180" width="18" height="140" rx="4" fill="#818cf8" opacity="0.6"/>
+    <rect x="980" y="140" width="18" height="180" rx="4" fill="#c084fc" opacity="0.6"/>
+    <rect x="1010" y="100" width="18" height="220" rx="4" fill="#f472b6" opacity="0.6"/>
+  </g>
+
+  <!-- Foreground Content: Pill Badge -->
+  <g transform="translate(60, 75)">
+    <rect width="320" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5"/>
+    <circle cx="20" cy="17" r="6" fill="#10b981"/>
+    <text x="36" y="22" class="badge-text">CURATED FINOPS &amp; COST ECOSYSTEM</text>
+  </g>
+
+  <!-- Foreground Content: Main Title -->
+  <text x="60" y="175" class="title-text" font-size="44" letter-spacing="-0.5">
+    Awesome Cloud Financial Management
+  </text>
+  <text x="60" y="230" class="title-text" font-size="40" fill="#38bdf8" letter-spacing="-0.5">
+    &amp; FinOps Tools 💰📊
+  </text>
+
+  <!-- Foreground Content: Subtitle -->
+  <text x="60" y="285" class="subtitle-text" font-size="20">
+    Commercial Platforms • Open-Source Tools • Cost Allocation • Unit Economics
+  </text>
+
+  <!-- Decorative Feature Tag Pills -->
+  <g transform="translate(60, 320)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="140" height="28" rx="6" fill="#334155" opacity="0.8"/>
+    <text x="70" y="18" font-family="sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">☁️ Multi-Cloud</text>
+
+    <!-- Tag 2 -->
+    <rect x="150" y="0" width="150" height="28" rx="6" fill="#334155" opacity="0.8"/>
+    <text x="225" y="18" font-family="sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">☸️ Kubernetes Costs</text>
+
+    <!-- Tag 3 -->
+    <rect x="310" y="0" width="160" height="28" rx="6" fill="#334155" opacity="0.8"/>
+    <text x="390" y="18" font-family="sans-serif" font-size="12" font-weight="600" fill="#e2e8f0" text-anchor="middle">📈 Savings Plans &amp; RIs</text>
+  </g>
+</svg>
