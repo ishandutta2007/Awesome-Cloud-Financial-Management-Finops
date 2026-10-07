@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Management-Finops"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Financial-Management-Finops?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Management-Finops"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Financial-Management-Finops?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Management-Finops/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Financial-Management-Finops?style=social" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Financial-Management-Finops/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cloud-Financial-Management-Finops?color=blue" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -65,7 +65,7 @@ The global Cloud Financial Management (FinOps) market size is estimated at **~$2
 
 ## 🔓 Open-Source GitHub Projects
 
-*Sorted by GitHub Stars Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[Infracost](https://github.com/infracost/infracost)** [![Infracost Stars](https://img.shields.io/github/stars/infracost/infracost?style=social&color=white)](https://github.com/infracost/infracost/stargazers)  
   **Cloud cost estimates for Terraform in pull requests**, Apache-2.0 licensed. **11,850 stars, 890 forks**. **Shift-Left FinOps** — displays real-time cost impact of infrastructure changes before deployment in CI/CD pipelines (GitHub Actions, GitLab CI, VS Code). 💰
@@ -107,8 +107,8 @@ The global Cloud Financial Management (FinOps) market size is estimated at **~$2
 Contributions are welcome! Follow these steps to submit new FinOps platforms or open-source cost management tools: 🤝
 
 1. 🍴 **Fork** the repository.
-2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure, detailed pricing, and star counts.
-3. 🔗 Include project title, official website/GitHub link, exact star count, license, and brief description.
+2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure, detailed pricing, and Stars_Counts.
+3. 🔗 Include project title, official website/GitHub link, exact Stars_Count, license, and brief description.
 4. 🚀 Submit a **Pull Request** with a descriptive summary of your changes.
 
 ---
@@ -142,3 +142,12 @@ If you find this FinOps repository useful, please consider supporting the projec
 <p align="center">
   <b>Made with ❤️ for FinOps engineers, cloud architects, finance teams, and open-source advocates.</b>
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Cloud-Financial-Management-Finops&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Cloud-Financial-Management-Finops_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Cloud-Financial-Management-Finops_growth.svg">
+  </picture>
+</a>
